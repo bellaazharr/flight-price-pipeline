@@ -59,6 +59,7 @@ flowchart LR
 - Silver joined with the route-and-airline average price from Gold, giving one wide table the model can read directly.
 
 ## The model
+![Dashboard](dashboard.png)
 
 - **Features:** 7 categorical columns (airline, cities, departure/arrival time, stops, class) encoded with `StringIndexer`, plus 10 numeric ones (duration, days left, delay stats, weather, route-airline average price).
 - **Split:** instead of a random split, I used `days_left` as a time proxy. Bookings made more than 15 days out are training data (217,204 rows); the last 15 days are test data (80,263 rows). This mimics predicting prices for bookings that happen *later*.
