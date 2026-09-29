@@ -85,8 +85,8 @@ flight-price-pipeline/
 ## Run it yourself
 
 1. Download both datasets from Kaggle:
-   - Flight price data: `Clean_Dataset.csv`
-   - Flight delay data: `Combined_Flights_2022.csv`
+   - Flight price data: `[Clean_Dataset.csv](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction)`
+   - Flight delay data: `[Combined_Flights_2022.csv](https://github.com/Vonter/india-aviation-traffic)`
 2. In Google Drive, create `flight_pipeline/raw/kaggle/` and `flight_pipeline/raw/delay/`, and put the CSVs there.
 3. Open `flight_pipeline.ipynb` in Google Colab and run all cells. The notebook installs PySpark, mounts Drive, and creates the Bronze, Silver, Gold, Curated and exports folders itself.
 4. The weather step calls the free Open-Meteo API, so you don't need an API key.
